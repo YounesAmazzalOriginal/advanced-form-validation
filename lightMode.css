@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Dosis", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+button {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+input {
+  outline: none;
+  border: 0;
+}
+
+:root {
+  --border-color: #d1d1d1;
+}
+
+form {
+  display: grid;
+  gap: 10px;
+}
+
+.input_container {
+  display: grid;
+}
+
+.input_container label {
+  margin-bottom: 5px;
+  text-transform: capitalize;
+  color: #000000;
+}
+
+.input_container input {
+  width: 300px;
+  padding: 10px 13px;
+  border-radius: 5px;
+  border: 2px solid var(--border-color);
+  transition: border-color 0.3s;
+}
+
+.input_container input:focus {
+  border-color: #017bff;
+}
+
+.input_container span {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.form_container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+form input[type="button"] {
+  background-color: #017bff;
+  border-radius: 5px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form input[type="button"]:hover {
+  background-color: #0056b3;
+}
+
+form input[type="text"]:nth-child(5) {
+  background-color: #017bff;
+  opacity: 0.5;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  padding: 10px;
+  cursor: no-drop;
+}
+
+/* Theme Switcher */
+.buttonSwitcher {
+  background-color: #181818;
+  border-radius: 100px;
+  width: 50px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  padding-inline: 2.5px;
+  justify-content: start;
+}
+.switcherCircle {
+  background-color: #f0f0f0;
+  border-radius: 100%;
+  width: 21px;
+  height: 21px;
+  margin-left: px;
+}
+
+/* change Theme Color */
+.changeThemeColor {
+  display: grid;
+  gap: 10px;
+  background-color: white;
+  padding: 5px 3px;
+  border-radius: 1000px;
+  position: absolute;
+  left: 50px;
+}
+.changeThemeColor button {
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+}

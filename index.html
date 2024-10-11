@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <div class="form_container">
+      <form action="" onsubmit="submitForm()" class="submitFormClass">
+        <div class="input_container input_container_1">
+          <label for="">username:</label>
+          <input class="usernameInput" type="text" name="" />
+          <span class="usernamespan"></span>
+        </div>
+        <div class="input_container input_container_2">
+          <label for="">email:</label>
+          <input class="emailInput" type="text" name="" />
+          <!-- <span class="emailspan"></span> -->
+        </div>
+        <div class="input_container input_container_3">
+          <label for="">password:</label>
+          <input class="passwordInput" type="text" name="" />
+          <span class="passwordspan"></span>
+        </div>
+        <div class="input_container input_container_4">
+          <label for="">confirm password:</label>
+          <input class="confirmpasswordInput" type="text" name="" />
+          <span class="confirmspan"></span>
+        </div>
+        <!-- <button class="SignUpClass" type="submit" onclick="ButtonFunc(event)">
+          sign up
+        </button> -->
+        <input
+          type="button"
+          onclick="ButtonFunc(event)"
+          value="sign up"
+          class="SignUpClass"
+          readonly
+        />
+      </form>
+    </div>
+    <button class="buttonSwitcher">
+      <div class="switcherCircle"></div>
+    </button>
+  </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+
+    <link id="stylesheetLight" rel="stylesheet" href="lightMode.css" />
+
+    <script src="script.js"></script>
+    <script src="themeSwitcher.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playwrite+DE+Grund:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+</html>

@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Dosis", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  height: 100vh;
+  background-color: green;
+  overflow: hidden;
+  animation: infinite forwards alternate bodyMove 1s;
+}
+@keyframes bodyMove {
+  from {
+    background-color: green;
+  }
+  to {
+    background-color: white;
+  }
+}
+h1 {
+  color: white;
+  font-size: 4rem;
+  text-transform: uppercase;
+  animation: infinite forwards alternate h1Move 1s;
+}
+@keyframes h1Move {
+  from {
+    color: white;
+  }
+  to {
+    color: green;
+  }
+}
+
+.border {
+  width: 97vw;
+  height: 95vh;
+  position: absolute;
+  animation: infinite forwards alternate borderMove 1s;
+}
+@keyframes borderMove {
+  from {
+    border: 10px solid white;
+  }
+  to {
+    border: 10px solid green;
+  }
+}
